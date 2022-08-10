@@ -31,11 +31,11 @@ public class GameManager : MonoBehaviour {
 
 	void Awake(){
 
-		Time.timeScale = 0;
 		Instance = this;
 	}
 
 	void OnEnable(){
+		CountdownText.OnCountdownFinished += OnCountdownFinished;
 		TapController.OnPlayerDied += OnPlayerDied;
 		TapController.OnPlayerScored += OnPlayerScored;
 	
