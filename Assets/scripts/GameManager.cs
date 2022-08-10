@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject countdownPage;
 	public Text scoreText;
 
+	private int _score;
+
 	enum PageState{
 		None,
 		Start,
@@ -28,7 +30,8 @@ public class GameManager : MonoBehaviour {
 	public bool GameOver { get { return !gameOver; } }
 
 	void Awake(){
-	
+
+		Time.timeScale = 0;
 		Instance = this;
 	}
 
@@ -66,7 +69,7 @@ public class GameManager : MonoBehaviour {
 	void OnPlayerScored(){
 	
 		_score++;
-		scoreText.text = _score;
+		scoreText.text = _score.ToString();
 	}
 
 	void SetPageState(PageState state){
