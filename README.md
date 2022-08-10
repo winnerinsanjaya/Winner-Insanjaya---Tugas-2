@@ -16,7 +16,7 @@ Tugas 2 Diklat 3-in-1 BDI Denpasar X Agate
 1. 
 Mengubah variable _score --> score
 
-3. 
+2. 
 Mengubah statement scoretext.text = score menjadi scoretext.text = score.ToString();
 
 3. 
@@ -44,6 +44,6 @@ if (col.gameObject.tag == "DeadZone") {
 7. 
 add tag ke prefabs woods. yang bawah
 
-9.
+8.
 GameManager.cs Line 62
 if (score > savedScore) {
