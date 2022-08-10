@@ -24,10 +24,11 @@ public class CountdownText : MonoBehaviour {
 		int count = 3;
 		for (int i = 0; i < count; i++) {
 			countdown.text = (count - i).ToString();
-			yield return new WaitForSeconds (1);
+			yield return new WaitForSeconds(1);
 		
 		
 		}
+
 	
 		OnCountdownFinished ();
 	}
