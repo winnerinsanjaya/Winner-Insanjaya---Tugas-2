@@ -12,6 +12,7 @@ Tugas 2 Diklat 3-in-1 BDI Denpasar X Agate
 8. Highscore belum berfungsi [Medium]
 
 ----Approach----
+
 1. 
 Mengubah variable _score --> score
 
